@@ -1,3 +1,154 @@
 body {
-    margin: 0;
-} 
+  margin: 0;
+  font-family: "Smythe", cursive;
+  background-color: #f5f5f5;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: lighter;
+}
+
+h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  box-sizing: border-box;
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  color: #fff;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+main {
+  padding: 0 46px;
+}
+
+.items-list {
+  margin-top: 65px;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 46px;
+  display: flex;
+  border-bottom: solid 1px #d2d2d2;
+  gap: 20px;
+}
+
+.item-emoji {
+  width: 120px;
+  font-size: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-ingredients {
+  color: #8b8b8b;
+}
+
+.item-price {
+  font-size: 20px;
+}
+
+.item-btn {
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  border-radius: 50%;
+  border: solid 1px #dedede;
+  color: #3c3c3c;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Check out */
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.checkout-title {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.checkout-items {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.checkout-items button {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+.checkout-items:nth-last-child(2) {
+  border-top: solid 2px #393333;
+  padding-top: 10px;
+}
+
+.checkout-items p {
+  margin: 0 0 0 auto;
+}
+
+.order-btn {
+  margin: 30px 0;
+  background-color: #16db99;
+  border-radius: 3px;
+  color: #fff;
+  padding: 18px;
+  font-weight: 700;
+}
+
+/* .checkout h2,
+.checkout div,
+.checkout button,
+.checkout p {
+  border: solid 1px blue;
+}
+ */
+
+/* Payment modal */
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

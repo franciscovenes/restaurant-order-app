@@ -1,9 +1,87 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
+  <head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+      </header>
+      <main>
+        <section class="items-list">
+          <div class="item">
+            <div class="item-emoji"><span>🍕</span></div>
+            <div class="item-details">
+              <h2>Pizza</h2>
+              <p class="item-ingredients">pepperoni,mushrom,mozarella</p>
+              <p class="item-price">$14</p>
+            </div>
+            <button class="item-btn">+</button>
+          </div>
+          <div class="item">
+            <div class="item-emoji"><span>🍔</span></div>
+            <div class="item-details">
+              <h2>Hamburger</h2>
+              <p class="item-ingredients">beef, cheese, lettuce</p>
+              <p class="item-price">$12</p>
+            </div>
+            <button class="item-btn">+</button>
+          </div>
+          <div class="item">
+            <div class="item-emoji"><span>🍺</span></div>
+            <div class="item-details">
+              <h2>Beer</h2>
+              <p class="item-ingredients">grain, hops, yeast, water</p>
+              <p class="item-price">$12</p>
+            </div>
+            <button class="item-btn">+</button>
+          </div>
+        </section>
+
+        <!-- JS will render the rest of the HTML -->
+
+        <!-- checkout order  -->
+
+        <section class="checkout">
+          <h2 class="checkout-title">Your order</h2>
+          <div class="checkout-items">
+            <h2>Pizza</h2>
+            <button>remove</button>
+            <p class="item-price">14$</p>
+          </div>
+          <div class="checkout-items">
+            <h2>Beer</h2>
+            <button>remove</button>
+            <p class="item-price">12$</p>
+          </div>
+          <div class="checkout-items">
+            <h2>Total price:</h2>
+            <p class="item-price">$26</p>
+          </div>
+          <button class="order-btn">Complete order</button>
+        </section>
+      </main>
+    </div>
+    <!-- Payment Popup -->
+    <div class="payment-modal">
+      <h3>Enter card details</h3>
+      <form></form>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
