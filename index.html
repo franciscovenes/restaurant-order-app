@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Smythe&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
       rel="stylesheet"
     />
 
@@ -13,74 +13,61 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
 
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Jimmy's Diner</h1>
-        <p>The best burgers and pizzas in town.</p>
+        <h1>Rincón del Pancho</h1>
+        <p>La mejor sazón costeña.</p>
       </header>
       <main>
-        <section class="items-list">
-          <div class="item">
-            <div class="item-emoji"><span>🍕</span></div>
-            <div class="item-details">
-              <h2>Pizza</h2>
-              <p class="item-ingredients">pepperoni,mushrom,mozarella</p>
-              <p class="item-price">$14</p>
-            </div>
-            <button class="item-btn">+</button>
-          </div>
-          <div class="item">
-            <div class="item-emoji"><span>🍔</span></div>
-            <div class="item-details">
-              <h2>Hamburger</h2>
-              <p class="item-ingredients">beef, cheese, lettuce</p>
-              <p class="item-price">$12</p>
-            </div>
-            <button class="item-btn">+</button>
-          </div>
-          <div class="item">
-            <div class="item-emoji"><span>🍺</span></div>
-            <div class="item-details">
-              <h2>Beer</h2>
-              <p class="item-ingredients">grain, hops, yeast, water</p>
-              <p class="item-price">$12</p>
-            </div>
-            <button class="item-btn">+</button>
-          </div>
-        </section>
+        <section class="items-list"></section>
 
         <!-- JS will render the rest of the HTML -->
 
         <!-- checkout order  -->
 
-        <section class="checkout">
-          <h2 class="checkout-title">Your order</h2>
-          <div class="checkout-items">
-            <h2>Pizza</h2>
-            <button>remove</button>
-            <p class="item-price">14$</p>
-          </div>
-          <div class="checkout-items">
-            <h2>Beer</h2>
-            <button>remove</button>
-            <p class="item-price">12$</p>
-          </div>
-          <div class="checkout-items">
-            <h2>Total price:</h2>
-            <p class="item-price">$26</p>
-          </div>
-          <button class="order-btn">Complete order</button>
-        </section>
+        <section id="checkout" class="checkout"></section>
       </main>
     </div>
     <!-- Payment Popup -->
-    <div class="payment-modal">
-      <h3>Enter card details</h3>
-      <form></form>
+    <div id="payment-modal" class="payment-modal">
+      <h3>Introduzca los datos de la tarjeta</h3>
+      <form id="client-form">
+        <input
+          type="text"
+          name="client-name"
+          placeholder="Introduzca su nombre"
+          required
+        />
+        <input
+          type="text"
+          name="card-number"
+          placeholder="Introduzca su # de tarjeta"
+          required
+        />
+        <input
+          type="text"
+          name="cvv-number"
+          placeholder="Introduzca su código CVV"
+          required
+        />
+        <button id="pay-btn" class="order-btn" type="submit">
+          Pagar su pedido
+        </button>
+        <i id="modal-close-btn" class="fa-solid fa-xmark"></i>
+      </form>
     </div>
     <script src="index.js" type="module"></script>
   </body>
