@@ -183,9 +183,11 @@ function getOrderHtml() {
       totalPrice -= discountAmount * 2;
 
       // Render discount message
-      orderHtml += `<p class="discount">🤩 Descuento de $${
-        discountAmount * 2
-      } por llevar ${discountAmount} combo(s) de encebollado (🍲 + 🍟 + 🥤)</p>`;
+      orderHtml += `
+  <div class="discount">
+    <p class="discount-message">🤩 Descuento de por llevar ${discountAmount} combo(s) de encebollado (🍲 + 🍟 + 🥤)</p>
+    <p class="item-price">- $${discountAmount * 2}</p>
+  </div>`;
     }
 
     // Render final price and payment button
