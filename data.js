@@ -38,14 +38,14 @@ export const menuArray = [
   },
   {
     name: "Porción de chifles",
-    ingredients: ["plaintain"],
+    ingredients: ["verde"],
     price: 2,
     emoji: "🍟",
     id: 5,
   },
   {
     name: "Biela",
-    ingredients: ["grain", "hops", "yeast", "water"],
+    ingredients: ["cebada", "lúpulo", "agua"],
     price: 3,
     emoji: "🍺",
     id: 6,
