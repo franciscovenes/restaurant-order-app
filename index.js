@@ -185,7 +185,7 @@ function getOrderHtml() {
       // Render discount message
       orderHtml += `
   <div class="discount">
-    <p class="discount-message">🤩 Descuento de por llevar ${discountAmount} combo(s) de encebollado (🍲 + 🍟 + 🥤)</p>
+    <p class="discount-message">🤩 Descuento por llevar ${discountAmount} combo(s) de encebollado (🍲 + 🍟 + 🥤)</p>
     <p class="item-price">- $${discountAmount * 2}</p>
   </div>`;
     }
